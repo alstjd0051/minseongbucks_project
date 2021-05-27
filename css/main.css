@@ -390,12 +390,14 @@ header .badges .badge {
   height: 62px;
   flex-grow: 1;
 }
-.notice .notice-line .inner__left .swiper-slide{
+
+.notice .notice-line .inner__left .swiper-slide {
   height: 62px;
   display: flex;
   align-items: center;
 }
-.notice .notice-line .inner__left .swiper-slide a{
+
+.notice .notice-line .inner__left .swiper-slide a {
   color: #fff;
 }
 
@@ -410,8 +412,8 @@ header .badges .badge {
 .notice .notice-line .inner__left .notice-line__more .material-icons {
   color: #fff;
   font-size: 30px;
-  
-  
+
+
 }
 
 .notice .notice-line .inner__right {
@@ -439,4 +441,23 @@ header .badges .badge {
 
 .notice .notice-line .inner__right .togle-promotion .material-icons {
   font-size: 30px;
+}
+
+.notice .promotion {
+  height: 693px;
+  background-color: #f6f5ef;
+  position: relative;
+}
+
+.notice .promotion .swiper-container {
+  width: calc(819px * 3 + 20px);
+  /* width: calc(100% - 50px); */
+  height: 553px;
+  background-color: orange;
+  text-align: center;
+  font-size: 200px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819 83 20px) / -2);
 }
