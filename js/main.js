@@ -80,7 +80,7 @@ new Swiper('.promotion .swiper-container', {
 })
 
 const promotionEl = document.querySelector('.promotion');
-const promotionToggleBtn = document.querySelector('.toggle-promotion');
+const promotionToggleBtn = document.querySelector('.tnoggle-promotion');
 let isHidePromotion = false;
 promotionToggleBtn.addEventListener('click', function () {
   isHidePromotion = !isHidePromotion
