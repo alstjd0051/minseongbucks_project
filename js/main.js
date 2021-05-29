@@ -56,7 +56,7 @@ fadeEls.forEach(function (fadeEl, index) {
 // new Swiper(선택자,옵션)
 new Swiper('.notice-line .swiper-container', {
   direction: 'vertical', // 수직 슬라이드
-  // autoplay: true, // 자동 재생 여부
+  // autoplay: true, // 자동 재생 부
   loop: true // 반복 재생 여부
 });
 
@@ -77,7 +77,18 @@ new Swiper('.promotion .swiper-container', {
     prevEl: '.promotion .swiper-prev',
     nextEl: '.promotion .swiper-next'
   }
-})
+});
+new Swiper('.awards .swiper-container', {
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+  navigation: {
+    prevEl: '.awards .swper-prev',
+    nextEl: '.awards .swper-next'
+  }
+});
+
 
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.tnoggle-promotion');
@@ -126,6 +137,6 @@ spyEls.forEach(function (spyEl) {
       triggerElement: spyEl, //보여짐 여부를 감시할 요소를 지정
       triggerHook: .8
     })
-      .setClassToggle()
-        .addTo();
+      .setClassToggle(spyEl, 'show')
+      .addTo(new ScrollMagic.Controller());
 });
