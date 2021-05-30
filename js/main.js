@@ -137,6 +137,9 @@ spyEls.forEach(function (spyEl) {
       triggerElement: spyEl, //보여짐 여부를 감시할 요소를 지정
       triggerHook: .8
     })
-      .setClassToggle(spyEl, 'show')
-      .addTo(new ScrollMagic.Controller());
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller());
 });
+
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear(); // 2021
